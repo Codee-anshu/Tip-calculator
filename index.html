@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main>
+        <section class="sectionDiv">
+            <div class="inputField">
+                <label for="billAmount">Bill Amount</label>
+                <span>$</span>
+                <input type="text" name="billAmount" placeholder="0.00" id="billAmountInput" onkeyup="calculateBill()"/>
+            </div>
+            <div class="inputField">
+                <label for="TipAmount">Tip</label>
+                <span>%</span>
+                <input type="number" name="TipAmount" placeholder="10" id="tipAmountInput" onkeyup="calculateBill()">
+            </div>
+
+            <div class="displayField">
+                <div class="peopleCount">
+                    <label for="">People</label>
+                    <div class="peopleDisplay">
+                        <span class=" icon  increasePeople" >+</span>
+                        <span class="numberOfPeople">1</span>
+                        <span class=" icon decreasePeople">-</span>
+                    </div>
+                </div>
+                <div class="totalAmount">
+                    <label for="">Total Bill Amount</label>
+                    <p class="totalAmountDisplay">$0.00</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
